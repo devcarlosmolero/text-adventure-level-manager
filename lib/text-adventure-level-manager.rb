@@ -1,5 +1,5 @@
 require "yaml"
-require "text-engine"
+require "text-adventure-commander"
 
 class TextAdventureLevelManager
   def self.load_config(path)
@@ -17,14 +17,14 @@ class TextAdventureLevelManager
     level_0_scene_0_commands = level_0_scene_0["commands"]
     level_0_scene_0_commands = Hash[*level_0_scene_0_commands.each_slice(2).to_a.flatten]
 
-    text_engine = TextEngine.new(level_0_scene_0_commands)
-    puts "#{level_0_scene_0_text} #{text_engine.print_available_commands}"
+    commander = TextAdventureCommander.new(level_0_scene_0_commands)
+    puts "#{level_0_scene_0_text} #{commander.print_available_commands}"
     input = gets
-    result = text_engine.get_commands_from(input)
-    result[:recognized].each do |command|
+    recognized = commander.get_commands_from(input)
+    recognized.each do |command|
       load_level(level_0_scene_0_commands[command.upcase.tr(" ", "_")], config)
     end
   end
 end
 
-LevelManager.load_config("/levels.yml")
+TextAdventureLevelManager.load_config("/levels.yml")
