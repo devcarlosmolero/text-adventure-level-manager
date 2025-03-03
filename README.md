@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Text Aventure: Level Manager</h1>
 <p align="center">
-<img src="https://github.com/devcarlosmolero/text-adventure-commander/actions/workflows/rspec.yml/badge.svg"/>
+<img src="https://github.com/devcarlosmolero/text-adventure-level-manager/actions/workflows/rspec.yml/badge.svg"/>
 </p>
 
 Gem that allows you to manage the maze of levels and scenes of a text-based video game with a simple .yml file.
