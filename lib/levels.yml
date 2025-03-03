@@ -1,0 +1,35 @@
+_0:
+  scenes:
+    - text: You're in the Level1#Scene0
+      commands:
+        - GO_TOP: "level_0#scene_1"
+          GO_LEFT: "level_0#scene_2"
+          GO_RIGHT: "level_0#scene_3"
+          GO_BOTTOM: "level_0#scene_4"
+    - text: You're in the Level1#Scene1
+      commands:
+        - GO_TOP: "level_0#scene_0"
+          GO_LEFT: "level_0#scene_2"
+          GO_RIGHT: "level_0#scene_3"
+          GO_BOTTOM: "level_0#scene_4"
+    - text: You're in the Level1#Scene2
+      commands:
+        - GO_TOP: "level_0#scene_0"
+          GO_LEFT: "level_0#scene_1"
+          GO_RIGHT: "level_0#scene_3"
+          GO_BOTTOM: "level_0#scene_4"
+    - text: You're in the Level1#Scene3
+      commands:
+        - GO_TOP: "level_0#scene_0"
+          GO_LEFT: "level_0#scene_1"
+          GO_RIGHT: "level_0#scene_2"
+          GO_BOTTOM: "level_0#scene_4"
+    - text: You're in the Level1#Scene4
+      commands:
+        - GO_TOP: "level_1#scene_0"
+          GO_LEFT: "level_0#scene_1"
+          GO_RIGHT: "level_0#scene_2"
+          GO_BOTTOM: "level_0#scene_3"
+_1:
+  scenes:
+    - text: You're in the Level2#Scene0
