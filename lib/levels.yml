@@ -1,35 +1,46 @@
 _0:
+  name: "The Castle"
   scenes:
-    - text: You're in the Level0#Scene0
+    - text: You're in the Throne Room
+      name: Throne Room
+      objects: ["Dusty_Sword", "Handwritten_Note"]
       commands:
-        - GO_TOP: "level_0#scene_1"
-          GO_LEFT: "level_0#scene_2"
-          GO_RIGHT: "level_0#scene_3"
-          GO_BOTTOM: "level_0#scene_4"
-    - text: You're in the Level0#Scene1
+        - OPEN_FIRST:
+            type: navigation
+            to: level_0#scene_1
+          OPEN_SECOND:
+            type: navigation
+            to: level_0#scene_2
+          OPEN_THIRD:
+            type: navigation
+            to: level_0#scene_3
+          KEEP_WALKING:
+            type: navigation
+            to: level_0#scene_4
+    - text: You're in the Dinning Room
+      objects: ["Castle_Key"]
+      name: The Dinning Room
+      enemies: ["Filthy_Rat"]
       commands:
-        - GO_TOP: "level_0#scene_0"
-          GO_LEFT: "level_0#scene_2"
-          GO_RIGHT: "level_0#scene_3"
-          GO_BOTTOM: "level_0#scene_4"
-    - text: You're in the Level0#Scene2
+        - OPEN_DOOR:
+            type: navigation
+            to: level_0#scene_2
+    - text: You're in Bolinche's Room
+      name: Bolinche's Room
       commands:
-        - GO_TOP: "level_0#scene_0"
-          GO_LEFT: "level_0#scene_1"
-          GO_RIGHT: "level_0#scene_3"
-          GO_BOTTOM: "level_0#scene_4"
-    - text: You're in the Level0#Scene3
+        - OPEN_DOOR:
+            type: navigation
+            to: level_0#scene_3
+    - text: You're in the Armory Room
+      name: Armory Room
       commands:
-        - GO_TOP: "level_0#scene_0"
-          GO_LEFT: "level_0#scene_1"
-          GO_RIGHT: "level_0#scene_2"
-          GO_BOTTOM: "level_0#scene_4"
-    - text: You're in the Level0#Scene4
+        - OPEN_DOOR:
+            type: navigation
+            to: level_0#scene_0
+    - text: You're in the Castle Hall
+      name: Castle Hall
+      requires: ["Castle_Key"]
       commands:
-        - GO_TOP: "level_1#scene_0"
-          GO_LEFT: "level_0#scene_1"
-          GO_RIGHT: "level_0#scene_2"
-          GO_BOTTOM: "level_0#scene_3"
-_1:
-  scenes:
-    - text: You're in the Level2#Scene0
+        - GO_OUTSIDE:
+            type: navigation
+            to: level_0#scene_0
