@@ -49,5 +49,4 @@ class TextAdventureLevelManager
   end
 end
 
-# Cargar la configuración y ejecutar el nivel
 TextAdventureLevelManager.load_config("/levels.yml")
