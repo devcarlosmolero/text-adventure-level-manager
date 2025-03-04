@@ -28,8 +28,6 @@ class TextAdventureLevelManager
       end
     end
 
-
-
     full_commands_hash = commands_hash.merge(SEARCH_AROUND: {type: "search"})
 
     commander = TextAdventureCommander.new(full_commands_hash)
