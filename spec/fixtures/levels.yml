@@ -3,7 +3,7 @@ _0:
   scenes:
     - text: You're in the Throne Room
       name: Throne Room
-      objects: ["Dusty_Sword", "Handwritten_Note"]
+      objects: ["Dusty_Sword", "Handwritten_Note", "Torch"]
       commands:
         - OPEN_FIRST:
             type: navigation

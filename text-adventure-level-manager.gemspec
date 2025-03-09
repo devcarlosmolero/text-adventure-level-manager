@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.description = ""
   s.authors = ["Carlos Molero"]
   s.email = "dev@carlosmolero.com"
-  s.files = ["lib/level-manager.rb"]
+  s.files = ["lib/text-adventure-level-manager.rb"]
   s.homepage =
     "https://rubygems.org/gems/text-engine"
   s.license = "MIT"

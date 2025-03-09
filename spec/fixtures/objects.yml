@@ -1,0 +1,12 @@
+Dusty_Sword:
+  type: weapon
+  stats:
+    attack: 10
+    durability: 50
+
+Handwritten_Note:
+  type: note
+  content: "This is the content of the handwritten note."
+
+Torch:
+  type: actionable
